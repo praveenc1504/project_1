@@ -3,7 +3,7 @@
 An e-commerce application for cricket enthusiasts to explore and purchase high-quality cricket equipment.  
 
 ## 📖 Overview  
-Cricketgear Shop is a user-friendly application designed for purchasing cricket equipment like bats, helmets, pads, and more. Users can filter products by price, rating, and brand to find exactly what they need. Favorite products can also be saved for easy access later.  
+Cricketgear Shop is a user-friendly application designed for purchasing cricket equipment like bats, helmets, pads, and more. Users can filter products by price, rating, and brand to find exactly what they need. Favorite products can also be saved for easy access later...  
 
 ## 🎯 Objective  
 - Create a personalized user account to explore randomly selected cricket equipment.  
