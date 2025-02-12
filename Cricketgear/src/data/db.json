@@ -1,0 +1,67 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "name": "Adidas Club Pads",
+      "category": "Pads",
+      "description": "SG Litevate Pads - High-quality pads for professional and club-level players.",
+      "price": 8639,
+      "rating": 3.4,
+      "image": "https://via.placeholder.com/300x200?text=Adidas+Club+Pads"
+    },
+    {
+      "id": 2,
+      "name": "Kookaburra Turf Ball",
+      "category": "Ball",
+      "description": "GM Diamond Ball - High-quality ball for professional and club-level players.",
+      "price": 9610,
+      "rating": 3.5,
+      "image": "https://via.placeholder.com/300x200?text=Kookaburra+Turf+Ball"
+    },
+    {
+      "id": 3,
+      "name": "Nike Dri-FIT Jersey",
+      "category": "Jersey",
+      "description": "Nike Dri-FIT Jersey - High-quality jersey for professional and club-level players.",
+      "price": 3065,
+      "rating": 4.2,
+      "image": "https://via.placeholder.com/300x200?text=Nike+Dri-FIT+Jersey"
+    },
+    {
+      "id": 4,
+      "name": "Shrey Masterguard Helmet",
+      "category": "Helmet",
+      "description": "SS Gladiator Helmet - High-quality helmet for professional and club-level players.",
+      "price": 3449,
+      "rating": 4.3,
+      "image": "https://via.placeholder.com/300x200?text=Shrey+Masterguard+Helmet"
+    },
+    {
+      "id": 98,
+      "name": "Adidas Pro Cricket Jersey",
+      "category": "Jersey",
+      "description": "Nike Dri-FIT Jersey - High-quality jersey for professional and club-level players.",
+      "price": 7363,
+      "rating": 3.8,
+      "image": "https://via.placeholder.com/300x200?text=Adidas+Pro+Cricket+Jersey"
+    },
+    {
+      "id": 99,
+      "name": "SG Test Ball",
+      "category": "Ball",
+      "description": "GM Diamond Ball - High-quality ball for professional and club-level players.",
+      "price": 4169,
+      "rating": 4.8,
+      "image": "https://via.placeholder.com/300x200?text=SG+Test+Ball"
+    },
+    {
+      "id": 100,
+      "name": "Kookaburra Turf Ball",
+      "category": "Ball",
+      "description": "GM Diamond Ball - High-quality ball for professional and club-level players.",
+      "price": 7396,
+      "rating": 4.5,
+      "image": "https://via.placeholder.com/300x200?text=Kookaburra+Turf+Ball"
+    }
+  ]
+}
