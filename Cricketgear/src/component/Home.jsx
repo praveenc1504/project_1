@@ -1,6 +1,6 @@
 import React from 'react';
 import NavBar from './NavBar.jsx';
-import Product from './product.jsx';
+import Product from './Product.jsx';
 
 
 const Home = () => {
