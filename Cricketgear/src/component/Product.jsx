@@ -6,11 +6,11 @@ import "./Product.css";
 
 const Product = () => {
   const [product, setProduct] = useState([]);
-
+  const [count, setCount] = useState(0);
   useEffect(() => {
     fetch("http://localhost:4000/product")
       .then((response) => response.json())
-      .then((data) => setProduct(data))
+      .then((data) => {setProduct(data)})
       .catch((error) => console.error("Error fetching products:", error));
   }, []);
 
@@ -21,6 +21,7 @@ const Product = () => {
       {product.length > 0 ? (
           product.map((p) => (
             <Card key={p.id} className="custom-card">
+              
               <Card.Img variant="top" src={p.image} alt={p.title} />
               <Card.Body>
                 <Card.Title>{p.title}</Card.Title>

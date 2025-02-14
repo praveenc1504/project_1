@@ -12,10 +12,10 @@ function NavBar() {
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav className="me-auto my-2 my-lg-0" navbarScroll>
-            <Nav.Link as={Link} to="/">Home</Nav.Link>
+            <Nav.Link as={Link} to="/">HOME</Nav.Link>
             <Nav.Link as={Link} to="/bat">BAT</Nav.Link>
             <Nav.Link as={Link} to="/helmet">HELMET</Nav.Link>
-            <Nav.Link as={Link} to="/jersey">JERCY</Nav.Link>
+            <Nav.Link as={Link} to="/jersey">JERSEY</Nav.Link>
           </Nav>
           <Form className="d-flex">
             <Form.Control
