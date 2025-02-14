@@ -3,7 +3,7 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
-import './Navbarc.css'; // Make sure this path is correct
+import './NavBarc.css'; // Make sure this path is correct
 
 function NavBar() {
   return (
