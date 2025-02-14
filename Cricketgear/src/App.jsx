@@ -3,9 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import LoginPage from './LoginPage';
 import RegisterPage from './RegisterPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 import './App.css';
-import Home from './component/Home';
 
 const App = () => {
   return (
