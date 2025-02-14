@@ -1,0 +1,97 @@
+/* General Styles */
+
+body {
+    font-family: 'Arial', sans-serif;
+    
+    
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+  }
+  
+  h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+  }
+  
+  /* Product Section */
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+    padding: 20px;
+  }
+  
+  /* Card Styles */
+  .card {
+    width: 300px;
+    border-top: 10px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.2s ease-in-out;
+    margin-bottom: 20px; /* Add this */
+  }
+ .product-container {
+ /* Ensures full-screen height */
+  background-color: #32a852;
+}
+.product-grid{
+  margin-top: 3200px;
+}
+
+  .card img {
+    height: 200px;
+    object-fit: cover;
+    width: 100%; /* Ensure image fills the card width */
+  }
+  
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card img {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    padding: 15px;
+    
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #007bff;
+  }
+  
+  .card-text {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .card-text strong {
+    color: #333;
+  }
+  
+  button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  

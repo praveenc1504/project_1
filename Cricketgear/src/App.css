@@ -1,6 +1,7 @@
 body {
   font-family: 'Arial', sans-serif;
-  background: linear-gradient(135deg, #65a3b6, #06b6eb);
+  background: linear-gradient(135deg, #65a3b6, #06eb5e);
+  background-repeat:no-repeat;
   margin: 0;
   padding: 0;
   display: flex;

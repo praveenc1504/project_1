@@ -1,3 +1,4 @@
+
 {
   "product": [
     {
@@ -7,7 +8,7 @@
       "description": "SG Litevate Pads - High-quality pads for professional and club-level players.",
       "price": 8639,
       "rating": 3.4,
-      "image": "https://via.placeholder.com/300x200?text=Adidas+Club+Pads"
+      "image": "https://example.com/images/pads1.jpg"
     },
     {
       "id": 2,
@@ -16,7 +17,7 @@
       "description": "GM Diamond Ball - High-quality ball for professional and club-level players.",
       "price": 9610,
       "rating": 3.5,
-      "image": "https://via.placeholder.com/300x200?text=Kookaburra+Turf+Ball"
+      "image": "https://example.com/images/ball2.jpg"
     },
     {
       "id": 3,
@@ -25,7 +26,7 @@
       "description": "Nike Dri-FIT Jersey - High-quality jersey for professional and club-level players.",
       "price": 3065,
       "rating": 4.2,
-      "image": "https://via.placeholder.com/300x200?text=Nike+Dri-FIT+Jersey"
+      "image": "https://example.com/images/jersey3.jpg"
     },
     {
       "id": 4,
@@ -34,34 +35,295 @@
       "description": "SS Gladiator Helmet - High-quality helmet for professional and club-level players.",
       "price": 3449,
       "rating": 4.3,
-      "image": "https://via.placeholder.com/300x200?text=Shrey+Masterguard+Helmet"
+      "image": "https://example.com/images/helmet4.jpg"
     },
     {
-      "id": 98,
+      "id": 5,
+      "name": "SG Player Jersey",
+      "category": "Jersey",
+      "description": "Nike Dri-FIT Jersey - High-quality jersey for professional and club-level players.",
+      "price": 4538,
+      "rating": 4.7,
+      "image": "https://example.com/images/jersey5.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Puma Match Jersey",
+      "category": "Jersey",
+      "description": "Nike Dri-FIT Jersey - High-quality jersey for professional and club-level players.",
+      "price": 9736,
+      "rating": 3.8,
+      "image": "https://example.com/images/jersey6.jpg"
+    },
+    {
+      "id": 7,
+      "name": "DSC Club Cricket Ball",
+      "category": "Ball",
+      "description": "GM Diamond Ball - High-quality ball for professional and club-level players.",
+      "price": 8177,
+      "rating": 3.2,
+      "image": "https://example.com/images/ball7.jpg"
+    },
+    {
+      "id": 8,
+      "name": "SG Player Jersey",
+      "category": "Jersey",
+      "description": "Nike Dri-FIT Jersey - High-quality jersey for professional and club-level players.",
+      "price": 1081,
+      "rating": 3.2,
+      "image": "https://example.com/images/jersey8.jpg"
+    },
+    {
+      "id": 9,
+      "name": "DSC Club Cricket Ball",
+      "category": "Ball",
+      "description": "GM Diamond Ball - High-quality ball for professional and club-level players.",
+      "price": 3782,
+      "rating": 3.2,
+      "image": "https://example.com/images/ball9.jpg"
+    },
+    {
+      "id": 10,
+      "name": "DSC Club Cricket Ball",
+      "category": "Ball",
+      "description": "GM Diamond Ball - High-quality ball for professional and club-level players.",
+      "price": 5068,
+      "rating": 3.7,
+      "image": "https://example.com/images/ball10.jpg"
+    },
+    {
+      "id": 11,
+      "name": "SG Litevate Pads",
+      "category": "Pads",
+      "description": "SG Litevate Pads - High-quality pads for professional and club-level players.",
+      "price": 4435,
+      "rating": 4.5,
+      "image": "https://example.com/images/pads11.jpg"
+    },
+    {
+      "id": 12,
+      "name": "SG Player Jersey",
+      "category": "Jersey",
+      "description": "Nike Dri-FIT Jersey - High-quality jersey for professional and club-level players.",
+      "price": 4731,
+      "rating": 3.9,
+      "image": "https://example.com/images/jersey12.jpg"
+    },
+    {
+      "id": 13,
+      "name": "MRF Genius Virat Edition",
+      "category": "Bat",
+      "description": "SG Tournament Bat - High-quality bat for professional and club-level players.",
+      "price": 6776,
+      "rating": 3.8,
+      "image": "https://example.com/images/bat13.jpg"
+    },
+    {
+      "id": 14,
+      "name": "GM Original Pads",
+      "category": "Pads",
+      "description": "SG Litevate Pads - High-quality pads for professional and club-level players.",
+      "price": 9924,
+      "rating": 4.7,
+      "image": "https://example.com/images/pads14.jpg"
+    },
+    {
+      "id": 15,
+      "name": "SS Test Pads",
+      "category": "Pads",
+      "description": "SG Litevate Pads - High-quality pads for professional and club-level players.",
+      "price": 3803,
+      "rating": 3.4,
+      "image": "https://example.com/images/pads15.jpg"
+    },
+    {
+      "id": 16,
+      "name": "Kookaburra Kahuna Pads",
+      "category": "Pads",
+      "description": "SG Litevate Pads - High-quality pads for professional and club-level players.",
+      "price": 9776,
+      "rating": 3.9,
+      "image": "https://example.com/images/pads16.jpg"
+    },
+    {
+      "id": 17,
+      "name": "GM Icon DXM",
+      "category": "Bat",
+      "description": "SG Tournament Bat - High-quality bat for professional and club-level players.",
+      "price": 3254,
+      "rating": 3.5,
+      "image": "https://example.com/images/bat17.jpg"
+    },
+    {
+      "id": 18,
+      "name": "SG Litevate Pads",
+      "category": "Pads",
+      "description": "SG Litevate Pads - High-quality pads for professional and club-level players.",
+      "price": 419,
+      "rating": 3.9,
+      "image": "https://example.com/images/pads18.jpg"
+    },
+    {
+      "id": 19,
+      "name": "SS Gladiator Helmet",
+      "category": "Helmet",
+      "description": "SS Gladiator Helmet - High-quality helmet for professional and club-level players.",
+      "price": 6376,
+      "rating": 4.7,
+      "image": "https://example.com/images/helmet19.jpg"
+    },
+    {
+      "id": 20,
+      "name": "Adidas Club Pads",
+      "category": "Pads",
+      "description": "SG Litevate Pads - High-quality pads for professional and club-level players.",
+      "price": 1948,
+      "rating": 4.2,
+      "image": "https://example.com/images/pads20.jpg"
+    },
+    {
+      "id": 21,
+      "name": "GM Cricket Helmet",
+      "category": "Helmet",
+      "description": "SS Gladiator Helmet - High-quality helmet for professional and club-level players.",
+      "price": 9598,
+      "rating": 4.3,
+      "image": "https://example.com/images/helmet21.jpg"
+    },
+    {
+      "id": 22,
+      "name": "Kookaburra Blaze 800",
+      "category": "Bat",
+      "description": "SG Tournament Bat - High-quality bat for professional and club-level players.",
+      "price": 9320,
+      "rating": 3.6,
+      "image": "https://example.com/images/bat22.jpg"
+    },
+    {
+      "id": 23,
       "name": "Adidas Pro Cricket Jersey",
       "category": "Jersey",
       "description": "Nike Dri-FIT Jersey - High-quality jersey for professional and club-level players.",
-      "price": 7363,
-      "rating": 3.8,
-      "image": "https://via.placeholder.com/300x200?text=Adidas+Pro+Cricket+Jersey"
+      "price": 9395,
+      "rating": 3.5,
+      "image": "https://example.com/images/jersey23.jpg"
     },
     {
-      "id": 99,
+      "id": 24,
+      "name": "MRF Genius Virat Edition",
+      "category": "Bat",
+      "description": "SG Tournament Bat - High-quality bat for professional and club-level players.",
+      "price": 6515,
+      "rating": 4.5,
+      "image": "https://example.com/images/bat24.jpg"
+    },
+    {
+      "id": 25,
+      "name": "GM Diamond Ball",
+      "category": "Ball",
+      "description": "GM Diamond Ball - High-quality ball for professional and club-level players.",
+      "price": 3088,
+      "rating": 4.1,
+      "image": "https://example.com/images/ball25.jpg"
+    },
+    {
+      "id": 26,
       "name": "SG Test Ball",
       "category": "Ball",
       "description": "GM Diamond Ball - High-quality ball for professional and club-level players.",
-      "price": 4169,
-      "rating": 4.8,
-      "image": "https://via.placeholder.com/300x200?text=SG+Test+Ball"
+      "price": 4825,
+      "rating": 3.9,
+      "image": "https://example.com/images/ball26.jpg"
     },
     {
-      "id": 100,
+      "id": 27,
+      "name": "Nike Dri-FIT Jersey",
+      "category": "Jersey",
+      "description": "Nike Dri-FIT Jersey - High-quality jersey for professional and club-level players.",
+      "price": 2104,
+      "rating": 4.7,
+      "image": "https://example.com/images/jersey27.jpg"
+    },
+    {
+      "id": 28,
       "name": "Kookaburra Turf Ball",
       "category": "Ball",
       "description": "GM Diamond Ball - High-quality ball for professional and club-level players.",
-      "price": 7396,
-      "rating": 4.5,
-      "image": "https://via.placeholder.com/300x200?text=Kookaburra+Turf+Ball"
+      "price": 8949,
+      "rating": 5.0,
+      "image": "https://example.com/images/ball28.jpg"
+    },
+    {
+      "id": 29,
+      "name": "Nike Dri-FIT Jersey",
+      "category": "Jersey",
+      "description": "Nike Dri-FIT Jersey - High-quality jersey for professional and club-level players.",
+      "price": 9806,
+      "rating": 4.6,
+      "image": "https://example.com/images/jersey29.jpg"
+    },
+    {
+      "id": 30,
+      "name": "SS County Ball",
+      "category": "Ball",
+      "description": "GM Diamond Ball - High-quality ball for professional and club-level players.",
+      "price": 1352,
+      "rating": 3.1,
+      "image": "https://example.com/images/ball30.jpg"
+    },
+    {
+      "id": 31,
+      "name": "Adidas Club Pads",
+      "category": "Pads",
+      "description": "SG Litevate Pads - High-quality pads for professional and club-level players.",
+      "price": 5530,
+      "rating": 4.7,
+      "image": "https://example.com/images/pads31.jpg"
+    },
+    {
+      "id": 32,
+      "name": "Adidas Club Pads",
+      "category": "Pads",
+      "description": "SG Litevate Pads - High-quality pads for professional and club-level players.",
+      "price": 6974,
+      "rating": 4.0,
+      "image": "https://example.com/images/pads32.jpg"
+    },
+    {
+      "id": 33,
+      "name": "SS Gladiator Helmet",
+      "category": "Helmet",
+      "description": "SS Gladiator Helmet - High-quality helmet for professional and club-level players.",
+      "price": 4245,
+      "rating": 3.2,
+      "image": "https://example.com/images/helmet33.jpg"
+    },
+    {
+      "id": 34,
+      "name": "Puma Match Jersey",
+      "category": "Jersey",
+      "description": "Nike Dri-FIT Jersey - High-quality jersey for professional and club-level players.",
+      "price": 9158,
+      "rating": 4.3,
+      "image": "https://example.com/images/jersey34.jpg"
+    },
+    {
+      "id": 35,
+      "name": "SG Test Ball",
+      "category": "Ball",
+      "description": "GM Diamond Ball - High-quality ball for professional and club-level players.",
+      "price": 9331,
+      "rating": 4.0,
+      "image": "https://example.com/images/ball35.jpg"
+    },
+    {
+      "id": 36,
+      "name": "SS Master 1000",
+      "category": "Bat",
+      "description": "SG Tournament Bat - High-quality bat for professional and club-level players.",
+      "price": 8517,
+      "rating": 4.0,
+      "image": "https://example.com/images/bat36.jpg"
     }
-  ]
+   ]
 }
