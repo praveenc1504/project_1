@@ -22,7 +22,7 @@ const Product = () => {
           product.map((p) => (
             <Card key={p.id} className="custom-card">
               
-              <Card.Img variant="top" src={p.image} alt={p.title} />
+              <Card.Img variant="top" src={p.image} alt={p.title} style={{height:"300px"}} />
               <Card.Body>
                 <Card.Title>{p.title}</Card.Title>
                 <Card.Text>
@@ -30,7 +30,11 @@ const Product = () => {
                   <strong>Price:</strong> ${p.price} <br />
                   <strong>Rating:</strong> ⭐ {p.rating.rate} ({p.rating.count} reviews)
                 </Card.Text>
+                <div className='button-container'>
+
+                <Button variant="secondary" style={{background:"green",width:"100px"}}>card</Button>
                 <Button variant="primary">Buy Now</Button>
+                </div>
               </Card.Body>
             </Card>
           ))

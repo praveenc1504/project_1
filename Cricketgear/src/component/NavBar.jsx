@@ -17,6 +17,7 @@ function NavBar() {
             <Nav.Link as={Link} to="/helmet">HELMET</Nav.Link>
             <Nav.Link as={Link} to="/jersey">JERSEY</Nav.Link>
           </Nav>
+          <Button variant="secondary" style={{background:"green",width:"100px",marginRight:"15px"}}>card</Button>
           <Form className="d-flex">
             <Form.Control
               type="search"

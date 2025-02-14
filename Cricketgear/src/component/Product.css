@@ -1,9 +1,7 @@
 /* General Styles */
 
 body {
-    font-family: 'Arial', sans-serif;
-    
-    
+    font-family: 'Arial', sans-serif;  
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -30,17 +28,17 @@ body {
     width: 300px;
     border-top: 10px solid #ddd;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 10 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #fff;
     transition: transform 0.2s ease-in-out;
     margin-bottom: 20px; /* Add this */
   }
  .product-container {
  /* Ensures full-screen height */
-  background-color: #32a852;
+  background-color: #7ea0cf;
 }
 .product-grid{
-  margin-top: 3200px;
+  margin-top: 4100px;
 }
 
   .card img {
@@ -88,9 +86,13 @@ body {
     padding: 10px 15px;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.2s ease;
+    
   }
-  
+  .button-container{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
   button:hover {
     background-color: #0056b3;
   }
