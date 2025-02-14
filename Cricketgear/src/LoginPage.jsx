@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import './App.css';
+import './login.css';
 import Swal from 'sweetalert2';
 
 const LoginPage = () => {
@@ -27,6 +28,7 @@ const LoginPage = () => {
   };
 
   return (
+    <div className="login-page">
     <div className="login-container">
       <h2>Login</h2>
       {error && <div className="error-message">{error}</div>}
@@ -54,6 +56,7 @@ const LoginPage = () => {
       <p>
         Don't have an account? <Link to="/register">Register</Link>
       </p>
+    </div>
     </div>
   );
 };

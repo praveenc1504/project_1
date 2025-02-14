@@ -1,38 +1,37 @@
 .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1030;
-    background-color: #f8f9fa; /* Light background (default bootstrap) */
-    padding: 0.5rem 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
-  }
-  
-  .container-fluid {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  
-  body {
-    padding-top: 60px; /* Prevent content overlap with navbar */
-  }
-  
-  .navbar .nav-link {
-    color: #000;
-    font-weight: 500;
-    margin-right: 1rem;
-  }
-  
-  .navbar .nav-link:hover {
-    color: #007bff; /* Bootstrap primary blue on hover */
-  }
-  
-  .navbar .form-control {
-    max-width: 300px;
-  }
-  
-  .navbar .btn {
-    font-weight: bold;
-  }
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1030;
+  background-color: #f8f9fa; /* Light background (default bootstrap) */
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+body {
+  padding-top: 30px; /* Prevent content overlap with navbar */
+}
+
+.navbar .nav-link {
+  color: #000;
+  font-weight: 500;
+  margin-right: 1rem;
+}
+
+.navbar .nav-link:hover {
+  color: #213d5b; /* Bootstrap primary blue on hover */
+}
+
+.navbar .form-control {
+  max-width: 300px;
+}
+
+.navbar .btn {
+  font-weight: bold;
+}

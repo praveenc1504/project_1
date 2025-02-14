@@ -1,15 +1,14 @@
 import React from 'react';
-import NavBar from './NavBar.jsx';
+import NavBar from './NavBar.jsx'; // Ensure the path is correct
 import Product from './Product.jsx';
-
 
 const Home = () => {
   return (
     <>
-    <NavBar/>
-    <Product/>
+     
+      <NavBar /> {/* Ensure NavBar is rendered here */}
+      <Product />
     </>
-    
   );
 };
 
