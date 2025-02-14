@@ -1,5 +1,5 @@
 import React from 'react';
-import NavBar from './Navbar.jsx';
+import NavBar from './NavBar.jsx';
 import Product from './product.jsx';
 
 
