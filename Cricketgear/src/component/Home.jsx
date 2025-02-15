@@ -10,7 +10,7 @@ const Home = () => {
    return (
     <>
      <NavBar />
-  <button className='addButton' onClick={() => navigate("/addProd")}>+</button>
+      <button className='addButton' onClick={() => navigate("/addProd")}>+</button>
      <Product />
     </>
    );

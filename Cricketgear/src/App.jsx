@@ -16,13 +16,13 @@ const App = () => {
   return (
     <ProductProvider>
       <Router>
-       
+
         <Routes>
           <Route path="/" element={<Navigate to="/login" />} /> {/* Redirect "/" to "/login" */}
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/home" element={<Home />} /> 
-          <Route path="/bat" element={<Bat />} /> 
+          <Route path="/bat" element={<Bat/>} /> 
           <Route path="/ball" element={<Ball />} /> 
           <Route path="/jersey" element={<Jersey />} /> 
           <Route path="/addProd" element={<Addproducut/>} /> 

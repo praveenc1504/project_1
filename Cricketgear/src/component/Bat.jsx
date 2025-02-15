@@ -1,44 +1,44 @@
 import React, { useContext } from "react";
 import { ProductContext } from "./ProductProvider";
-import NavBar from "./NavBar";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import "./ProductStyles.css";
+import NavBar from "./NavBar";
 
-const Ball = () => {
+const Bat = () => {
   const { products } = useContext(ProductContext);
-  const ballProducts = products?.filter((p) => p.category?.toLowerCase() === "ball") || [];
+  const bats = products?.filter((p) => p.category === "Bat") || [];
 
   return (
     <>
       <NavBar />
       <div className="product-container">
-        <h1 className="product-title">Balls</h1>
+        <h1 className="product-title">Bats</h1>
         <section className="product-grid">
-          {ballProducts.length > 0 ? (
-            ballProducts.map((p) => (
-              <Card key={p.id || Math.random()} className="custom-card">
+          {bats.length > 0 ? (
+            bats.map((bat) => (
+              <Card key={bat.id} className="custom-card">
                 <Card.Img
                   variant="top"
-                  src={p.image || "https://via.placeholder.com/300"} // ✅ Default image if missing
-                  alt={p.name || "Product Image"}
+                  src={bat.image || "https://via.placeholder.com/300"} // ✅ Default image if missing
+                  alt={bat.name || "Product Image"}
                   style={{ height: "300px" }}
                 />
                 <Card.Body>
-                  <Card.Title>{p.name || "Unknown Product"}</Card.Title>
+                  <Card.Title>{bat.name}</Card.Title>
                   <Card.Text>
-                    <strong>Price:</strong> ${p.price || "N/A"} <br />
-                    <strong>Rating:</strong> ⭐ {p.rating?.rate || "N/A"} ({p.rating?.count || 0} reviews)
+                    <strong>Price:</strong> ${bat.price} <br />
+                    <strong>Rating:</strong> ⭐ {bat.rating?.rate || "N/A"} ({bat.rating?.count || 0} reviews)
                   </Card.Text>
                   <div className="button-container">
-                    <Button className="green-button">Add to Cart</Button>
+                    <Button className="green-button">Card</Button>
                     <Button variant="primary">Buy Now</Button>
                   </div>
                 </Card.Body>
               </Card>
             ))
           ) : (
-            <p className="no-products-message">No Balls Available</p>
+            <p>No Bats Available</p>
           )}
         </section>
       </div>
@@ -46,4 +46,4 @@ const Ball = () => {
   );
 };
 
-export default Ball;
+export default Bat;

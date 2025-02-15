@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import './App.css';
-import './login.css';
 import Swal from 'sweetalert2';
 
 const LoginPage = () => {

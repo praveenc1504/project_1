@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import './App.css';
+import './RegisterPage.css';
 import Swal from 'sweetalert2';
 
 const RegisterPage = () => {

@@ -7,6 +7,7 @@ import './NavBarc.css'; // Make sure this path is correct
 
 function NavBar() {
   return (
+    
     <Navbar expand="lg" className="navbar">
       <div className="container-fluid">
         <Navbar.Toggle aria-controls="navbarScroll" />
