@@ -7,32 +7,37 @@ import "./Product.css";
 const Product = () => {
   const { products } = useContext(ProductContext);
 
+  if (!products || products.length === 0) {
+    return <p>No products available</p>; // Prevents mapping over undefined
+  }
+
   return (
     <div className="product-container">
       <section className="product-grid">
-        {products.length > 0 ? (
-          products.map((p) => (
-            <Card key={p.id} className="custom-card">
-              <Card.Img variant="top" src={p.image} alt={p.title} style={{ height: "300px" }} />
-              <Card.Body>
-                <Card.Title>{p.name}</Card.Title>
-                <Card.Text>
-                  <strong>Category:</strong> {p.category} <br />
-                  <strong>Price:</strong> ${p.price} <br />
-                  <strong>Rating:</strong> ⭐ {p.rating.rate} ({p.rating.count} reviews)
-                </Card.Text>
-                <div className="button-container">
-                  <Button variant="secondary" style={{ background: "green", width: "100px" }}>
-                    Card
-                  </Button>
-                  <Button variant="primary">Buy Now</Button>
-                </div>
-              </Card.Body>
-            </Card>
-          ))
-        ) : (
-          <p>Loading products...</p>
-        )}
+        {products.map((p) => (
+          <Card key={p.id || Math.random()} className="custom-card">
+            <Card.Img 
+              variant="top" 
+              src={p.image || "https://via.placeholder.com/300"} 
+              alt={p.title || "No Title Available"} 
+              style={{ height: "300px" }} 
+            />
+            <Card.Body>
+              <Card.Title>{p.name || "No Name"}</Card.Title>
+              <Card.Text>
+                <strong>Category:</strong> {p.category || "N/A"} <br />
+                <strong>Price:</strong> ${p.price || "N/A"} <br />
+                <strong>Rating:</strong> ⭐ {p.rating?.rate || "N/A"} ({p.rating?.count || 0} reviews)
+              </Card.Text>
+              <div className="button-container">
+                <Button variant="secondary" style={{ background: "green", width: "100px" }}>
+                  Card
+                </Button>
+                <Button variant="primary">Buy Now</Button>
+              </div>
+            </Card.Body>
+          </Card>
+        ))}
       </section>
     </div>
   );
