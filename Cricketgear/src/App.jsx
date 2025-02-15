@@ -9,7 +9,7 @@ import Ball from './component/Ball';
 import ProductProvider from "./component/ProductProvider";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import Jersey from './component/jersey';
+import Jersey from './component/Jersey';
 
 const App = () => {
   return (
