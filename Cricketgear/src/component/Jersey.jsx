@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { ProductContext } from "./ProductProvider"; 
-import NavBar from "./Navbar";
+import NavBar from "./NavBar";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button"; // ✅ Added missing Button import
 import "./ProductStyles.css";

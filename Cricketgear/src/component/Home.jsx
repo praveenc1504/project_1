@@ -1,7 +1,8 @@
 import React from 'react';
-import NavBar from './Navbar';
-import Product from './product';
+import NavBar from './NavBar';
+
 import './NavBarc.css';
+import Product from './Product';
 
 const Home = () => {
   return (
@@ -9,7 +10,7 @@ const Home = () => {
      
      <NavBar/>
      <button className='addButton'>+</button>
-      <Product />
+      <Product/>
       
     </>
   );
