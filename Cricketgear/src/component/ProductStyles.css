@@ -1,0 +1,79 @@
+.product-container {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(89, 190, 135, 0.443);
+  }
+  
+  h1.product-title {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 10px;
+  }
+  
+  .custom-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    background-color: #fff;
+  }
+  
+  .custom-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .custom-card img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    color: #007bff;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+  }
+  
+  button {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  button:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  button.green-button {
+    background-color: rgb(45, 139, 45);
+    border: none;
+  }
+  
+  button.green-button:hover {
+    background-color: #28a745;
+  }
+  

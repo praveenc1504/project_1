@@ -36,3 +36,34 @@ body {
 .navbar .btn {
   font-weight: bold;
 }
+/* General Button Styling */
+.addButton {
+  position: fixed; /* Position it inside the card */
+  bottom: 40px; /* Distance from the bottom */
+  right: 30px; /* Distance from the right */
+  background-color: #c25e55; /* Green background */
+  color: white;
+  border: none;
+  border-radius: 50%; /* Makes it circular */
+  width: 70px;
+  height: 70px;
+  font-size: 2.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  z-index: 3;
+}
+
+.addButton:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Ensure the Card has relative positioning */
+.custom-card {
+  position: relative; /* Needed for absolute positioning inside */
+  padding-bottom: 40px; /* To prevent overlap with button */
+}
