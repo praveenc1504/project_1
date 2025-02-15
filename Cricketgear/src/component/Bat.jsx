@@ -1,45 +1,44 @@
 import React, { useContext } from "react";
 import { ProductContext } from "./ProductProvider";
-
-import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button"; // ✅ Import Button
-import "./ProductStyles.css"; // Import the styles
 import NavBar from "./NavBar";
+import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
+import "./ProductStyles.css";
 
-const Bat = () => {
+const Ball = () => {
   const { products } = useContext(ProductContext);
-  const bats = products.filter((p) => p.category === "Bat");
+  const ballProducts = products?.filter((p) => p.category?.toLowerCase() === "ball") || [];
 
   return (
     <>
-      <NavBar/>
+      <NavBar />
       <div className="product-container">
-        <h1 className="product-title">Bats</h1>
+        <h1 className="product-title">Balls</h1>
         <section className="product-grid">
-          {bats.length > 0 ? (
-            bats.map((bat) => (
-              <Card key={bat.id} className="custom-card">
+          {ballProducts.length > 0 ? (
+            ballProducts.map((p) => (
+              <Card key={p.id || Math.random()} className="custom-card">
                 <Card.Img
                   variant="top"
-                  src={bat.image}
-                  alt={bat.title}
+                  src={p.image || "https://via.placeholder.com/300"} // ✅ Default image if missing
+                  alt={p.name || "Product Image"}
                   style={{ height: "300px" }}
                 />
                 <Card.Body>
-                  <Card.Title>{bat.name}</Card.Title>
+                  <Card.Title>{p.name || "Unknown Product"}</Card.Title>
                   <Card.Text>
-                    <strong>Price:</strong> ${bat.price} <br />
-                    <strong>Rating:</strong> ⭐ {bat.rating.rate} ({bat.rating.count} reviews)
+                    <strong>Price:</strong> ${p.price || "N/A"} <br />
+                    <strong>Rating:</strong> ⭐ {p.rating?.rate || "N/A"} ({p.rating?.count || 0} reviews)
                   </Card.Text>
                   <div className="button-container">
-                    <Button className="green-button">Card</Button> {/* ✅ Fixed */}
+                    <Button className="green-button">Add to Cart</Button>
                     <Button variant="primary">Buy Now</Button>
                   </div>
                 </Card.Body>
               </Card>
             ))
           ) : (
-            <p>No Bats Available</p>
+            <p className="no-products-message">No Balls Available</p>
           )}
         </section>
       </div>
@@ -47,4 +46,4 @@ const Bat = () => {
   );
 };
 
-export default Bat;
+export default Ball;

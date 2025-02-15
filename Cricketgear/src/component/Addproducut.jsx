@@ -2,8 +2,11 @@ import React, { useState, useContext } from 'react';
 import NavBar from './NavBar';
 import { ProductContext } from './ProductProvider';
 import './AddProduct.css';
+import Swal from 'sweetalert2';
+import { useNavigate } from 'react-router-dom';
 
 const AddProduct = () => {
+    const nav=useNavigate();
     const { products, setProducts } = useContext(ProductContext); // Use context
     const [name, setName] = useState('');
     const [category, setCategory] = useState('');
@@ -54,8 +57,24 @@ const AddProduct = () => {
             .then(response => response.json())
             .then(data => {
                 setProducts([...products, data]); // Update product list
-                alert("Product added successfully!");
+            
+                Swal.fire({
+                    title: "Custom width, padding, color, background.",
+                    width: 600,
+                    padding: "3em",
+                    color: "#716add",
+                    background: "#fff url(/images/trees.png)",
+                    backdrop: `
+                      rgba(0,0,123,0.4)
+                      url("/images/nyan-cat.gif")
+                      left top
+                      no-repeat
+                    `
+                  }).then(() => {
+                    nav("/home"); // Navigate after confirmation
+                });
             })
+            
             .catch(error => {
                 console.error("Error adding product:", error);
                 alert("Failed to add product");
