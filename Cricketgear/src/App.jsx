@@ -10,6 +10,7 @@ import ProductProvider from "./component/ProductProvider";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Jersey from './component/Jersey';
+import Addproducut from './component/Addproducut';
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
           <Route path="/bat" element={<Bat />} /> 
           <Route path="/ball" element={<Ball />} /> 
           <Route path="/jersey" element={<Jersey />} /> 
+          <Route path="/addProd" element={<Addproducut/>} /> 
           <Route path="*" element={<h2 className="text-center mt-5">404 - Page Not Found</h2>} /> {/* Handle unknown routes */}
         </Routes>
       </Router>
