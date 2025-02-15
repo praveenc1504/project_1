@@ -4,7 +4,7 @@ import { ProductContext } from "./ProductProvider";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button"; // ✅ Import Button
 import "./ProductStyles.css"; // Import the styles
-import NavBar from "./Navbar";
+import NavBar from "./NavBar";
 
 const Bat = () => {
   const { products } = useContext(ProductContext);
