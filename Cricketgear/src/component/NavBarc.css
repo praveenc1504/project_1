@@ -15,7 +15,8 @@
 }
 
 body {
-  padding-top: 30px; /* Prevent content overlap with navbar */
+  padding-top: 0px; /* Prevent content overlap with navbar */
+  
 }
 
 .navbar .nav-link {
