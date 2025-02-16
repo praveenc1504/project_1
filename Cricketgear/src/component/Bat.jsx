@@ -30,6 +30,7 @@ const Bat = () => {
                   src={bat.image || "https://via.placeholder.com/300"} // ✅ Default image if missing
                   alt={bat.name || "Product Image"}
                   style={{ height: "300px" }}
+                  
                 />
                 <Card.Body>
                   <Card.Title>{bat.name}</Card.Title>
