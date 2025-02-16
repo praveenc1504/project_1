@@ -4,8 +4,16 @@ import NavBar from "./NavBar";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import "./ProductStyles.css";
+import { useDispatch } from "react-redux";
+import { addState } from "../store/cardSlice";
 
 const Jersey = () => {
+ 
+  let dispatch =useDispatch();
+  let additem =(p)=>{
+     dispatch(addState(p))
+   }
+
   const { products } = useContext(ProductContext);
   const jerseyProducts = products?.filter((p) => p.category?.toLowerCase() === "jersey") || [];
 
@@ -31,7 +39,7 @@ const Jersey = () => {
                     <strong>Rating:</strong> ⭐ {p.rating?.rate || "N/A"} ({p.rating?.count || 0} reviews)
                   </Card.Text>
                   <div className="button-container">
-                    <Button className="green-button">Add to Cart</Button>
+                    <Button className="green-button" onClick={()=> additem(p)}>Add to Cart</Button>
                     <Button variant="primary">Buy Now</Button>
                   </div>
                 </Card.Body>

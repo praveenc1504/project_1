@@ -2,12 +2,12 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './NavBarc.css'; // Make sure this path is correct
 
 function NavBar() {
+  let Navigate= useNavigate();
   return (
-    
     <Navbar expand="lg" className="navbar">
       <div className="container-fluid">
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -18,7 +18,7 @@ function NavBar() {
             <Nav.Link as={Link} to="/ball">BALL</Nav.Link>
             <Nav.Link as={Link} to="/jersey">JERSEY</Nav.Link>
           </Nav>
-          <Button variant="secondary" style={{background:"green",width:"100px",marginRight:"15px"}}>card</Button>
+          <Button variant="secondary" onClick={()=>Navigate("/CardList")} style={{background:"green",width:"100px",marginRight:"15px"}}>card</Button>
           <Form className="d-flex">
             <Form.Control
               type="search"

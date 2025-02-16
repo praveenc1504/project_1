@@ -1,15 +1,22 @@
-import React, { useContext } from "react";
+import React, { useContext ,} from "react";
 import { ProductContext } from "./ProductProvider"; 
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import "./Product.css";
-
+import { useDispatch } from "react-redux";
+import { addState } from "../store/cardSlice";
+import { useNavigate } from 'react-router-dom';
 const Product = () => {
+  let nav= useNavigate();
+  let dispatch =useDispatch();
+  let additem =(p)=>{
+     dispatch(addState(p))
+   }
   const { products } = useContext(ProductContext);
-
   if (!products || products.length === 0) {
     return <p>No products available</p>; // Prevents mapping over undefined
   }
+  
 
   return (
     <div className="product-container">
@@ -30,7 +37,7 @@ const Product = () => {
                 <strong>Rating:</strong> ⭐ {p.rating?.rate || "N/A"} ({p.rating?.count || 0} reviews)
               </Card.Text>
               <div className="button-container">
-                <Button variant="secondary" style={{ background: "green", width: "100px" }}>
+                <Button variant="secondary" onClick={()=> additem(p)} style={{ background: "green", width: "100px"}}>
                   Card
                 </Button>
                 <Button variant="primary">Buy Now</Button>

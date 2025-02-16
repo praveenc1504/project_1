@@ -4,8 +4,15 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import "./ProductStyles.css";
 import NavBar from "./NavBar";
+import { useDispatch } from "react-redux";
+import { addState } from "../store/cardSlice";
 
 const Bat = () => {
+
+  let dispatch =useDispatch();
+  let additem =(p)=>{
+     dispatch(addState(p))
+   }
   const { products } = useContext(ProductContext);
   const bats = products?.filter((p) => p.category === "Bat") || [];
 
@@ -31,7 +38,8 @@ const Bat = () => {
                     <strong>Rating:</strong> ⭐ {bat.rating?.rate || "N/A"} ({bat.rating?.count || 0} reviews)
                   </Card.Text>
                   <div className="button-container">
-                    <Button className="green-button">Card</Button>
+                    <Button className="green-button" onClick={()=>additem(bat)}>Add to Cart</Button>
+                
                     <Button variant="primary">Buy Now</Button>
                   </div>
                 </Card.Body>
