@@ -13,6 +13,9 @@ import Addproducut from './component/Addproducut';
 import CardList from './component/CardList';
 
 const App = () => {
+  if(!localStorage.getItem("praveen"))
+  localStorage.setItem("praveen",JSON.stringify([]))
+ 
   return (
     <ProductProvider>
       <Router>
