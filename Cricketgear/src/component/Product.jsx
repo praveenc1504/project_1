@@ -6,6 +6,7 @@ import "./Product.css";
 import { useDispatch } from "react-redux";
 import { addState } from "../store/cardSlice";
 import { useNavigate } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
 
 const Product = () => {
   let nav = useNavigate();
@@ -20,6 +21,19 @@ const Product = () => {
   if (!products || products.length === 0) {
     return <p>No products available</p>;
   }
+  const notify = () => {
+  toast("✌️ Add cart successfully!", {
+    position: "top-right",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: false,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "dark",
+    style: {backgroundColor: "#00bcd4"}, // Unique orange-red color
+  });
+};
 
   return (
     <div className="product-container">
@@ -40,9 +54,10 @@ const Product = () => {
                 <strong>Rating:</strong> ⭐ {p.rating?.rate || "N/A"} ({p.rating?.count || 0} reviews)
               </Card.Text>
               <div className="button-container">
-                <Button variant="secondary" onClick={() => additem(p)} style={{ background: "green", width: "100px" }}>
+                <Button variant="secondary" onClick={() =>{notify();additem(p)}} style={{ background: "green", width: "100px" }}>
                   Cart
                 </Button>
+                <ToastContainer style={{ zIndex: 10000, marginTop: "30px" }} />
                 <Button variant="primary">Buy Now</Button>
               </div>
             </Card.Body>

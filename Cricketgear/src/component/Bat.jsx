@@ -6,15 +6,31 @@ import "./ProductStyles.css";
 import NavBar from "./NavBar";
 import { useDispatch } from "react-redux";
 import { addState } from "../store/cardSlice";
+import { ToastContainer, toast } from 'react-toastify';
+import { useNavigate } from 'react-router-dom';
 
 const Bat = () => {
-
+  const navigate = useNavigate();
   let dispatch =useDispatch();
   let additem =(p)=>{
      dispatch(addState(p))
    }
   const { products } = useContext(ProductContext);
   const bats = products?.filter((p) => p.category === "Bat") || [];
+  
+    const notify = () => {
+    toast("✌️ Add cart successfully!", {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: false,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+      style: {backgroundColor: "#00bcd4"}, // Unique orange-red color
+    });
+  };
 
   return (
     <>
@@ -39,7 +55,10 @@ const Bat = () => {
                     <strong>Rating:</strong> ⭐ {bat.rating?.rate || "N/A"} ({bat.rating?.count || 0} reviews)
                   </Card.Text>
                   <div className="button-container">
-                    <Button className="green-button" onClick={()=>additem(bat)}>Add to Cart</Button>
+                  <Button variant="secondary" onClick={() =>{notify();additem(p)}} style={{ background: "green", width: "100px" }}>
+                  Cart
+                </Button>
+                <ToastContainer style={{ zIndex: 10000, marginTop: "30px" }} />
                 
                     <Button variant="primary">Buy Now</Button>
                   </div>
@@ -51,6 +70,7 @@ const Bat = () => {
           )}
         </section>
       </div>
+      <button className='addButton' onClick={() => navigate("/addProd")}>+</button>
     </>
   );
 };
