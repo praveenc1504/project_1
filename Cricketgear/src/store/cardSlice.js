@@ -9,6 +9,7 @@ const cardSlice = createSlice({
         addState(state, action) {
             state.push(action.payload);  // ✅ Adds new item to the array
             localStorage.setItem("praveen",JSON.stringify([...state]))
+            
         },
         removeState(state, action) {
             let newstate= state.filter(item => item.id !== action.payload);  // ✅ Removes item by ID

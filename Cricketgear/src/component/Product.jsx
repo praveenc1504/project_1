@@ -41,7 +41,7 @@ const Product = () => {
               </Card.Text>
               <div className="button-container">
                 <Button variant="secondary" onClick={() => additem(p)} style={{ background: "green", width: "100px" }}>
-                  Card
+                  Cart
                 </Button>
                 <Button variant="primary">Buy Now</Button>
               </div>

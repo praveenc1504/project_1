@@ -18,7 +18,7 @@ function NavBar() {
             <Nav.Link as={Link} to="/ball">BALL</Nav.Link>
             <Nav.Link as={Link} to="/jersey">JERSEY</Nav.Link>
           </Nav>
-          <Button variant="secondary" onClick={()=>Navigate("/CardList")} style={{background:"green",width:"100px",marginRight:"15px"}}>card</Button>
+          <Button variant="secondary" onClick={()=>Navigate("/CardList")} style={{background:"green",width:"100px",marginRight:"15px"}}>cart</Button>
           <Form className="d-flex">
             <Form.Control
               type="search"
